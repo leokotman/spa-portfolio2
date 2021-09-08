@@ -3,13 +3,13 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/">Main</router-link>
+          <v-btn><router-link to="/"> Main </router-link></v-btn>
         </li>
         <li>
-          <router-link to="/projects">Projects</router-link>
+          <v-btn><router-link to="/projects">Projects</router-link></v-btn>
         </li>
         <li>
-          <router-link to="/contacts">Contacts</router-link>
+          <v-btn><router-link to="/contacts">Contacts</router-link></v-btn>
         </li>
       </ul>
     </nav>
@@ -43,10 +43,7 @@ li {
 
 a {
   text-decoration: none;
-  background: transparent;
-  border: 1px solid transparent;
   cursor: pointer;
-  color: white;
   padding: 0.5rem 1.5rem;
   display: inline-block;
 }
@@ -56,6 +53,5 @@ a:active,
 a.router-link-exact-active {
   color: #f1a80a;
   border-color: #f1a80a;
-  background-color: #1a037e;
 }
 </style>
