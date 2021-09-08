@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <h1>Contacts page</h1>
     <ul>
       <h2>Contacts</h2>
@@ -12,7 +12,7 @@
         <a :href="link.link">{{ link.name }}</a>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
 
 <script>

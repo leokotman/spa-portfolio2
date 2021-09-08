@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <h1>Lev Kotman</h1>
     <h3 class="card-heading">Front-end web-developer</h3>
     <p class="paragraph">
@@ -7,7 +7,7 @@
       development after the long journey to myself. The information here is
       updated according to the new skills acquired.
     </p>
-    <section>
+    <section class="experience">
       <h2 class="content-heading">Experience</h2>
       <ul>
         <li v-for="exp in experience" :key="exp.dates" class="exp_item">
@@ -16,7 +16,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="skills">
       <h2 class="content-heading">Skills</h2>
       <ul>
         <li
@@ -37,7 +37,7 @@
         </li>
       </ul>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -69,7 +69,16 @@ export default {
   line-height: 46px;
   letter-spacing: 0.05em;
   color: #000000;
+  width: 100%;
 }
+
+.experience,
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .exp_item {
   display: flex;
   align-items: center;

@@ -1,12 +1,8 @@
 <template>
   <div>
     <the-navigation></the-navigation>
-    <main>
-      <router-view></router-view>
-    </main>
-    <footer>
-      <router-view name="footer"></router-view>
-    </footer>
+    <router-view></router-view>
+    <router-view name="footer"></router-view>
   </div>
 </template>
 
@@ -95,5 +91,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
 }
 </style>
