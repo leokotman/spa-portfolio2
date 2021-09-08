@@ -1,41 +1,43 @@
 <template>
-  <h1>Lev Kotman</h1>
-  <h3 class="card-heading">Front-end web-developer</h3>
-  <p class="paragraph">
-    I started programming in 2020, during worldwide crisis. I have come to
-    development after the long journey to myself. The information here is
-    updated according to the new skills acquired.
-  </p>
-  <section>
-    <h2 class="content-heading">Experience</h2>
-    <ul>
-      <li v-for="exp in experience" :key="exp.dates" class="exp_item">
-        <span>{{ exp.dates }}</span>
-        <p>{{ exp.description }}</p>
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2 class="content-heading">Skills</h2>
-    <ul>
-      <li
-        v-for="hard in skills.hardSkills"
-        :key="hard.index"
-        class="hardskill_item"
-      >
-        <span>{{ hard }}</span>
-      </li>
-    </ul>
-    <ul>
-      <li
-        v-for="soft in skills.softSkills"
-        :key="soft.index"
-        class="softskill_item"
-      >
-        <span>{{ soft }}</span>
-      </li>
-    </ul>
-  </section>
+  <div>
+    <h1>Lev Kotman</h1>
+    <h3 class="card-heading">Front-end web-developer</h3>
+    <p class="paragraph">
+      I started programming in 2020, during worldwide crisis. I have come to
+      development after the long journey to myself. The information here is
+      updated according to the new skills acquired.
+    </p>
+    <section>
+      <h2 class="content-heading">Experience</h2>
+      <ul>
+        <li v-for="exp in experience" :key="exp.dates" class="exp_item">
+          <span>{{ exp.dates }}</span>
+          <p>{{ exp.description }}</p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="content-heading">Skills</h2>
+      <ul>
+        <li
+          v-for="hard in skills.hardSkills"
+          :key="hard.index"
+          class="hardskill_item"
+        >
+          <span>{{ hard }}</span>
+        </li>
+      </ul>
+      <ul>
+        <li
+          v-for="soft in skills.softSkills"
+          :key="soft.index"
+          class="softskill_item"
+        >
+          <span>{{ soft }}</span>
+        </li>
+      </ul>
+    </section>
+  </div>
 </template>
 
 <script>
