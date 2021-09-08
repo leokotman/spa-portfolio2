@@ -4,7 +4,7 @@
     <ul>
       <h2>Contacts</h2>
       <li v-for="contact in contacts" :key="contact.index">
-        <a :href="'tel:+' + contact">{{ contact }}</a> 
+        <a :href="'tel:+' + contact">{{ contact }}</a>
       </li>
     </ul>
     <ul>

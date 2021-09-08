@@ -4,6 +4,8 @@ import VueRouter from "vue-router";
 import App from "./App.vue";
 
 import { routes } from "./routes.js";
+import vuetify from "./plugins/vuetify";
+import "@babel/polyfill";
 
 Vue.use(VueRouter);
 const router = new VueRouter({
@@ -14,5 +16,6 @@ const router = new VueRouter({
 new Vue({
   el: "#app",
   router: router,
+  vuetify,
   render: (h) => h(App),
 });

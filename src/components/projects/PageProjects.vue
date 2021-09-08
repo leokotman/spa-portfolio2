@@ -64,27 +64,27 @@
   padding: 64px 0 64px;
 }
 .project_text_small {
-    position: absolute;
-    font-size: 28px;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: #093964;
-    top: 10%;
-    left: 20%;
-    display: none;
+  position: absolute;
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #093964;
+  top: 10%;
+  left: 20%;
+  display: none;
 }
 
 .project_img {
-    object-fit: contain;
-    border: 1px solid #5A98D0;
-    border-radius: 10px;
+  object-fit: contain;
+  border: 1px solid #5a98d0;
+  border-radius: 10px;
 }
 
 .project_item:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .project_item:hover .project_text_small {
-    display: inline-block;
+  display: inline-block;
 }
 </style>
