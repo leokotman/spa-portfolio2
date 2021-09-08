@@ -78,6 +78,7 @@
   object-fit: contain;
   border: 1px solid #5a98d0;
   border-radius: 10px;
+  max-width: 100%;
 }
 
 .project_item:hover {
