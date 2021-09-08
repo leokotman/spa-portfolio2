@@ -2,7 +2,6 @@
   <main>
     <h1>Contacts page</h1>
     <ul>
-      <h2>Contacts</h2>
       <li v-for="contact in contacts" :key="contact.index">
         <a :href="'tel:+' + contact">{{ contact }}</a>
       </li>
@@ -20,3 +19,15 @@ export default {
   inject: ["address", "contacts", "webLinks"],
 };
 </script>
+
+<style scoped>
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+</style>

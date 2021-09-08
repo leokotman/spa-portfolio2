@@ -3,7 +3,9 @@
     <nav>
       <ul>
         <li>
-          <v-btn><router-link to="/"> Main </router-link></v-btn>
+          <v-btn @click="toggleActivity"
+            ><router-link to="/">Main</router-link></v-btn
+          >
         </li>
         <li>
           <v-btn><router-link to="/projects">Projects</router-link></v-btn>
@@ -15,6 +17,19 @@
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleActivity(event) {
+      event.stopPropagation();
+      console.log(event.target);
+      event.target.setAttribute("color", "error");
+      event.target.setAttribute("large", "");
+    },
+  },
+};
+</script>
 
 <style scoped>
 header {
