@@ -15,43 +15,41 @@
           height="480"
       /></a>
     </div>
-    <div class="project_parent">
-      <div class="project_item">
-        <a href="https://leokotman.github.io/JesKotman-artist/" target="_blank">
-          <img
-            class="project_img"
-            src="../../assets/img/project2.png"
-            alt="project2-artists-page"
-            width="1140"
-            height="600"
-          />
-          <p class="project_text_small">Artist's landing page</p>
-        </a>
-      </div>
-      <div class="project_item">
-        <a href="https://leokotman.github.io/rockstone-swiper/" target="_blank">
-          <img
-            class="project_img"
-            src="../../assets/img/project3.png"
-            alt="project3-mobile-React-app"
-            height="350"
-          />
-          <p class="project_text_small">
-            Messages & Current time – Swiper React mobile app
-          </p>
-        </a>
-      </div>
-      <div class="project_item">
-        <a href="https://leokotman.github.io/drum-kit/" target="_blank">
-          <img
-            class="project_img"
-            src="../../assets/img/project4.png"
-            alt="project4-drumkit-vanillajs"
-            height="350"
-          />
-          <p class="project_text_small">Play drums on Vanilla JS</p>
-        </a>
-      </div>
+    <div class="project_item">
+      <a href="https://leokotman.github.io/JesKotman-artist/" target="_blank">
+        <img
+          class="project_img"
+          src="../../assets/img/project2.png"
+          alt="project2-artists-page"
+          width="1140"
+          height="600"
+        />
+        <p class="project_text_small">Artist's landing page</p>
+      </a>
+    </div>
+    <div class="project_item">
+      <a href="https://leokotman.github.io/rockstone-swiper/" target="_blank">
+        <img
+          class="project_img"
+          src="../../assets/img/project3.png"
+          alt="project3-mobile-React-app"
+          height="350"
+        />
+        <p class="project_text_small">
+          Messages & Current time – Swiper React mobile app
+        </p>
+      </a>
+    </div>
+    <div class="project_item">
+      <a href="https://leokotman.github.io/drum-kit/" target="_blank">
+        <img
+          class="project_img"
+          src="../../assets/img/project4.png"
+          alt="project4-drumkit-vanillajs"
+          height="350"
+        />
+        <p class="project_text_small">Play drums on Vanilla JS</p>
+      </a>
     </div>
   </section>
 </template>
@@ -62,7 +60,11 @@
   width: 80%;
   margin: auto;
   padding: 64px 0 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
+
 .project_text_small {
   position: absolute;
   font-size: 28px;
