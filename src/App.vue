@@ -96,5 +96,6 @@ export default {
 main {
   max-width: 80%;
   margin: 0 auto;
+  padding-bottom: 150px;
 }
 </style>
