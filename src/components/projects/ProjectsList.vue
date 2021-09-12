@@ -51,6 +51,17 @@
         <p class="project_text_small">Play drums on Vanilla JS</p>
       </a>
     </div>
+    <div class="project_item">
+      <a href="https://leokotman.github.io/My-portfolio/" target="_blank">
+        <img
+          class="project_img"
+          src="../../assets/img/project5.png"
+          alt="project5-first-portfolio"
+          height="350"
+        />
+        <p class="project_text_small">First Portfolio</p>
+      </a>
+    </div>
   </section>
 </template>
 
@@ -61,7 +72,7 @@
   margin: auto;
   padding: 64px 0 64px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
