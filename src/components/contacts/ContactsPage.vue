@@ -37,6 +37,18 @@
         </v-list-item-group>
       </v-list>
     </v-card>
+    <v-card class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1501546.5340215224!2d18.269279135926663!3d42.68872573668996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c3217242c1fcb%3A0x384c9d866effd346!2sMontenegro!5e0!3m2!1sen!2s!4v1613007567467!5m2!1sen!2s"
+        width="100%"
+        height="300"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </v-card>
   </main>
 </template>
 
@@ -55,6 +67,7 @@ export default {
 main {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: space-evenly;
 }
 h1 {
@@ -75,6 +88,11 @@ h1 {
 
 a {
   text-decoration: none;
-  color:darkblue;
+  color: darkblue;
+}
+
+.map {
+  width: 100%;
+  padding: 2rem 0;
 }
 </style>

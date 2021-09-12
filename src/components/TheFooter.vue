@@ -12,7 +12,7 @@
         </v-btn>
       </v-card-text>
       <v-divider></v-divider>
-      <v-card-text class="white--text">
+      <v-card-text>
         {{ new Date().getFullYear() }} — <strong>Lev Kotman</strong>
       </v-card-text>
     </v-card>
@@ -71,5 +71,9 @@ ul {
   justify-content: space-between;
   max-width: 80%;
   margin: 0 auto;
+}
+
+.v-icon::before {
+  color: #11005c;
 }
 </style>
