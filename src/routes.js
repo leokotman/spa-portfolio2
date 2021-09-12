@@ -7,21 +7,29 @@ import ContactsPage from "./components/contacts/ContactsPage.vue";
 
 export const routes = [
   {
-    path: "/",
+    path: "/spa-portfolio2",
     name: "main",
     components: { default: AboutAuthor, footer: TheFooter },
   },
   {
-    path: "/projects",
+    path: "/spa-portfolio2/projects",
     name: "projects",
     components: { default: ProjectsPage, footer: TheFooter },
     children: [
-      { path: "/sites", name: "websites", component: ProjectsList },
-      { path: "/games", name: "games", component: GamesProjects },
+      {
+        path: "/spa-portfolio2/projects/sites",
+        name: "websites",
+        component: ProjectsList,
+      },
+      {
+        path: "/spa-portfolio2/projects/games",
+        name: "games",
+        component: GamesProjects,
+      },
     ],
   },
   {
-    path: "/contacts",
+    path: "/spa-portfolio2/contacts",
     name: "contacts",
     components: { default: ContactsPage, footer: TheFooter },
   },
