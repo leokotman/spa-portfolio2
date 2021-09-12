@@ -55,7 +55,6 @@ export default {
 
 .v-card {
   border: 1px solid rgba(0, 0, 0, 0.12);
-  background-color: #11005c;
 }
 .v-card__text:first-of-type {
   display: flex;
