@@ -3,8 +3,8 @@
     <h1>Contacts page</h1>
     <v-card tile max-width="300">
       <v-list rounded>
-        <v-list-item-group
-          ><v-list-item v-for="contact in contacts" :key="contact.index">
+        <v-list-item-group>
+          <v-list-item v-for="contact in contacts" :key="contact.index">
             <v-list-item-icon>
               <v-icon v-text="icons.contacts"></v-icon>
             </v-list-item-icon>
@@ -21,14 +21,14 @@
     </v-card>
     <v-card tile max-width="300">
       <v-list rounded>
-        <v-list-item-group
-          ><v-list-item v-for="link in webLinks" :key="link.name">
+        <v-list-item-group>
+          <v-list-item v-for="link in webLinks" :key="link.name">
             <v-list-item-icon>
               <v-icon v-text="icons.links"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>
-                <a :href="link.link">
+                <a :href="link.link" target="_blank">
                   {{ link.name }}
                 </a>
               </v-list-item-title>
@@ -73,6 +73,12 @@ main {
 h1 {
   width: 100%;
   text-align: center;
+}
+
+.v-item-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .v-list-item {

@@ -6,16 +6,6 @@
       clickable links).
     </p>
     <div class="project_item">
-      <a href="https://leokotman.github.io/4-HTML5-CSS3/" target="_blank"
-        ><img
-          class="project_img"
-          src="../../assets/img/project1.png"
-          alt="project1-course-site"
-          width="1140"
-          height="480"
-      /></a>
-    </div>
-    <div class="project_item">
       <a href="https://leokotman.github.io/JesKotman-artist/" target="_blank">
         <img
           class="project_img"
@@ -26,6 +16,16 @@
         />
         <p class="project_text_small">Artist's landing page</p>
       </a>
+    </div>
+    <div class="project_item">
+      <a href="https://leokotman.github.io/4-HTML5-CSS3/" target="_blank"
+        ><img
+          class="project_img"
+          src="../../assets/img/project1.png"
+          alt="project1-course-site"
+          width="1140"
+          height="480"
+      /></a>
     </div>
     <div class="project_item">
       <a href="https://leokotman.github.io/rockstone-swiper/" target="_blank">
