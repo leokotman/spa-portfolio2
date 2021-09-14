@@ -19,40 +19,45 @@ export default {
       experience: [
         {
           dates: "2020 – today",
+          format: "Education",
           description:
-            "Education: Front-end courses (Youtube, Udemy, Freecodecamp, GeekBrains, Codewars), web-dev books ",
+            "Front-end courses (Youtube, Udemy, Freecodecamp, GeekBrains, Codewars), web-dev books ",
         },
         {
           dates: "2015 – 2019",
-          description: "Education: RSUH (Psychology Institute) – bachelor",
+          format: "Education",
+          description: "RSUH (Psychology Institute) – bachelor",
         },
         {
           dates: "2009 – 2014",
+          format: "Education",
           description:
-            "Education: NRNU Mephi (Institute of International Relations) – specialist",
+            "NRNU Mephi (Institute of International Relations) – specialist",
         },
         {
           dates: "2019 – 2020",
-          description: "Job: Bank representative (Tinkoff)",
+          format: "Job",
+          description: "Bank representative (Tinkoff)",
         },
         {
           dates: "2018 – 2020",
-          description: "Job: Psychologist (consultation, private practice)",
+          format: "Job",
+          description: "Psychologist (consultation, private practice)",
         },
         {
           dates: "2015",
+          format: "Job",
           description:
-            "Job: Adminstrator (State budgetary institution on culture 'Sovremennik')",
+            "Adminstrator (State budgetary institution on culture 'Sovremennik')",
         },
       ],
       skills: {
         hardSkills: [
           "HTML5",
-          "CSS3",
-          "SCSS",
+          "CSS3, SCSS",
           "JavaScript",
-          "ReactJS",
           "VueJS",
+          "ReactJS",
           "MySQL",
         ],
         softSkills: [
