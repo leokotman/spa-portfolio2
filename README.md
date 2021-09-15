@@ -1,24 +1,6 @@
-# spa-portfolio
+This is my Portfolio website.
+Here you can find my story, education & skills (https://leokotman.github.io/spa-portfolio2/),
+finished projects (https://leokotman.github.io/spa-portfolio2/projects/sites), 
+contacts (https://leokotman.github.io/spa-portfolio2/contacts).
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Feel free to contact me!
