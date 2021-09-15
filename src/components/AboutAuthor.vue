@@ -73,6 +73,7 @@ export default {
 <style>
 .v-card.about_author {
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 .v-card h1,
 .v-card h3 {

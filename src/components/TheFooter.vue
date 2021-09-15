@@ -8,7 +8,7 @@
         <v-btn v-for="contact in contacts" :key="contact.index">
           <v-icon v-if="contact == contacts[0]"> {{ icons.phone }}</v-icon>
           <v-icon v-if="contact == contacts[1]"> {{ icons.chat }}</v-icon>
-          {{ contact }}
+          <a :href="'tel:' + contact">{{ contact }}</a>
         </v-btn>
       </v-card-text>
       <v-divider></v-divider>
@@ -74,5 +74,10 @@ ul {
 
 .v-icon::before {
   color: #11005c;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
 }
 </style>
