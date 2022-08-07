@@ -74,6 +74,48 @@ export default {
         { name: "Facebook", link: "https://www.facebook.com/leokotman" },
         { name: "levkotman@gmail.com", link: "mailto:levkotman@gmail.com" },
       ],
+      projects: [
+        {
+          link: "https://leokotman.github.io/JesKotman-artist/",
+          imgSrc: "../../assets/img/project2.png",
+          alt: "project2-artists-page",
+          width: "1140",
+          height: "600",
+          projectText: "Artist's landing page"
+        },
+        {
+          link: "https://leokotman.github.io/4-HTML5-CSS3/",
+          imgSrc: "../../assets/img/project1.png",
+          alt: "project1-course-site",
+          width: "1140",
+          height: "480",
+          projectText: "Website Landing page"
+        },
+        {
+          link: "https://leokotman.github.io/rockstone-swiper/",
+          imgSrc: "../../assets/img/project3.png",
+          alt: "project3-mobile-React-app",
+          width: "",
+          height: "350",
+          projectText: "Messages & Current time – Swiper React mobile app"
+        },
+        {
+          link: "https://leokotman.github.io/drum-kit/",
+          imgSrc: "../../assets/img/project4.png",
+          alt: "project4-drumkit-vanillajs",
+          width: "",
+          height: "350",
+          projectText: "Play drums on Vanilla JS"
+        },
+        {
+          link: "https://leokotman.github.io/My-portfolio/",
+          imgSrc: "../../assets/img/project5.png",
+          alt: "project5-first-portfolio",
+          width: "",
+          height: "350",
+          projectText: "First Portfolio"
+        },
+      ]
     };
   },
   provide() {
@@ -83,6 +125,7 @@ export default {
       address: this.address,
       contacts: this.contacts,
       webLinks: this.webLinks,
+      projects: this.projects,
     };
   },
 };

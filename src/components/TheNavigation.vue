@@ -27,7 +27,6 @@ export default {
   methods: {
     toggleActivity(event) {
       event.stopPropagation();
-      console.log(event.target);
       event.target.setAttribute("color", "error");
       event.target.setAttribute("large", "");
     },

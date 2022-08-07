@@ -25,7 +25,8 @@
           alt="project1-course-site"
           width="1140"
           height="480"
-      /></a>
+      /><p class="project_text_small">Website Landing page</p>
+      </a>
     </div>
     <div class="project_item">
       <a href="https://leokotman.github.io/rockstone-swiper/" target="_blank">
@@ -64,6 +65,21 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  name: "ProjectsList",
+  inject: ["projects"],
+  data() {
+    return {
+      // projects: []
+    }
+  },
+  mounted() {
+    console.log(this.projects);
+  }
+}
+</script>
 
 <style scoped>
 .our-project {
