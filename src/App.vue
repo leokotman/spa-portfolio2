@@ -18,10 +18,26 @@ export default {
     return {
       experience: [
         {
+          dates: "Oct 2021",
+          format: "Job",
+          description:
+            "Web-developer. Tech stack: Vue.js + Ejs. Project: business orders' and items' stock system. Fixed problems with frontend, new users' regitration.",
+        },
+        {
           dates: "2020 – today",
           format: "Education",
           description:
-            "Front-end courses (Youtube, Udemy, Freecodecamp, GeekBrains, Codewars), web-dev books ",
+            "Front-end courses (Youtube; Udemy; Freecodecamp; GeekBrains - web-development React, QA; Codewars), making pet projects",
+        },  
+        {
+          dates: "2019 – 2020",
+          format: "Job",
+          description: "Bank representative (Tinkoff)",
+        },
+        {
+          dates: "2018 – 2020",
+          format: "Job",
+          description: "Psychologist (consultation, private practice)",
         },
         {
           dates: "2015 – 2019",
@@ -33,16 +49,6 @@ export default {
           format: "Education",
           description:
             "NRNU Mephi (Institute of International Relations) – specialist",
-        },
-        {
-          dates: "2019 – 2020",
-          format: "Job",
-          description: "Bank representative (Tinkoff)",
-        },
-        {
-          dates: "2018 – 2020",
-          format: "Job",
-          description: "Psychologist (consultation, private practice)",
         },
         {
           dates: "2015",
@@ -58,7 +64,6 @@ export default {
           "JavaScript",
           "VueJS",
           "ReactJS",
-          "MySQL",
         ],
         softSkills: [
           "Analytical mind",
@@ -68,7 +73,7 @@ export default {
         ],
       },
       address: "Montenegro, Herceg Novi",
-      contacts: ["+382(68)498-108", "+7(905)583-90-12"],
+      contacts: ["+382(68)498-108"],
       webLinks: [
         { name: "My Github profile", link: "https://github.com/leokotman" },
         { name: "Facebook", link: "https://www.facebook.com/leokotman" },
@@ -76,8 +81,24 @@ export default {
       ],
       projects: [
         {
+          link: "https://leokotman.github.io/local_lang_vue/",
+          imgSrc: "project6.png",
+          alt: "Serbian-English learning app",
+          width: "1140",
+          height: "600",
+          projectText: "Serbian-English learning app"
+        },
+        {
+          link: "https://leokotman.github.io/forum_lp/",
+          imgSrc: "project7.png",
+          alt: "Forum Registration landing page",
+          width: "1140",
+          height: "600",
+          projectText: "Security Forum registration landing page"
+        },
+        {
           link: "https://leokotman.github.io/JesKotman-artist/",
-          imgSrc: "../../assets/img/project2.png",
+          imgSrc: "project2.png",
           alt: "project2-artists-page",
           width: "1140",
           height: "600",
@@ -85,7 +106,7 @@ export default {
         },
         {
           link: "https://leokotman.github.io/4-HTML5-CSS3/",
-          imgSrc: "../../assets/img/project1.png",
+          imgSrc: "project1.png",
           alt: "project1-course-site",
           width: "1140",
           height: "480",
@@ -93,7 +114,7 @@ export default {
         },
         {
           link: "https://leokotman.github.io/rockstone-swiper/",
-          imgSrc: "../../assets/img/project3.png",
+          imgSrc: "project3.png",
           alt: "project3-mobile-React-app",
           width: "",
           height: "350",
@@ -101,7 +122,7 @@ export default {
         },
         {
           link: "https://leokotman.github.io/drum-kit/",
-          imgSrc: "../../assets/img/project4.png",
+          imgSrc: "project4.png",
           alt: "project4-drumkit-vanillajs",
           width: "",
           height: "350",
@@ -109,7 +130,7 @@ export default {
         },
         {
           link: "https://leokotman.github.io/My-portfolio/",
-          imgSrc: "../../assets/img/project5.png",
+          imgSrc: "project5.png",
           alt: "project5-first-portfolio",
           width: "",
           height: "350",

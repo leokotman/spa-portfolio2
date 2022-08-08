@@ -5,62 +5,16 @@
       You can find here my recent projects (screenshots are real projects &
       clickable links).
     </p>
-    <div class="project_item">
-      <a href="https://leokotman.github.io/JesKotman-artist/" target="_blank">
+    <div class="project_item" v-for="project in projects" :key="project.alt">
+      <a :href="project.link" target="_blank">
         <img
           class="project_img"
-          src="../../assets/img/project2.png"
-          alt="project2-artists-page"
-          width="1140"
-          height="600"
+          :src="require(`@/assets/img/${project.imgSrc}`)"
+          :alt="project.alt"
+          :width="project.width"
+          :height="project.height"
         />
-        <p class="project_text_small">Artist's landing page</p>
-      </a>
-    </div>
-    <div class="project_item">
-      <a href="https://leokotman.github.io/4-HTML5-CSS3/" target="_blank"
-        ><img
-          class="project_img"
-          src="../../assets/img/project1.png"
-          alt="project1-course-site"
-          width="1140"
-          height="480"
-      /><p class="project_text_small">Website Landing page</p>
-      </a>
-    </div>
-    <div class="project_item">
-      <a href="https://leokotman.github.io/rockstone-swiper/" target="_blank">
-        <img
-          class="project_img"
-          src="../../assets/img/project3.png"
-          alt="project3-mobile-React-app"
-          height="350"
-        />
-        <p class="project_text_small">
-          Messages & Current time – Swiper React mobile app
-        </p>
-      </a>
-    </div>
-    <div class="project_item">
-      <a href="https://leokotman.github.io/drum-kit/" target="_blank">
-        <img
-          class="project_img"
-          src="../../assets/img/project4.png"
-          alt="project4-drumkit-vanillajs"
-          height="350"
-        />
-        <p class="project_text_small">Play drums on Vanilla JS</p>
-      </a>
-    </div>
-    <div class="project_item">
-      <a href="https://leokotman.github.io/My-portfolio/" target="_blank">
-        <img
-          class="project_img"
-          src="../../assets/img/project5.png"
-          alt="project5-first-portfolio"
-          height="350"
-        />
-        <p class="project_text_small">First Portfolio</p>
+        <p class="project_text_small">{{ project.projectText }}</p>
       </a>
     </div>
   </section>
@@ -70,15 +24,7 @@
 export default {
   name: "ProjectsList",
   inject: ["projects"],
-  data() {
-    return {
-      // projects: []
-    }
-  },
-  mounted() {
-    console.log(this.projects);
-  }
-}
+};
 </script>
 
 <style scoped>
@@ -97,7 +43,8 @@ export default {
   font-size: 28px;
   line-height: 46px;
   letter-spacing: 0.05em;
-  color: #093964;
+  color: #fff;
+  text-shadow: 0 0 7px #10395e;
   top: 10%;
   left: 20%;
   display: none;
